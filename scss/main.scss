@@ -1,8 +1,10 @@
-@import 'mixins';
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'base';
+// global
+
+@import 'global/mixins';
+@import 'global/vars';
+@import 'global/fonts';
+@import 'global/reset';
+@import 'global/base';
 
 // blocks
 
