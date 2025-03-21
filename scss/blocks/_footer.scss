@@ -1,1 +1,120 @@
-.footer {}
+.footer {
+   border-radius: 50px 50px 0 0;
+   margin-top: -50px;
+   background: #161c24;
+
+   &__top {
+      padding: 50px 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+   }
+
+   &__logo {}
+
+   &__logo-img {}
+
+   &__time {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 14px;
+      color: rgba(244, 246, 248, 0.6);
+
+      &::before {
+         content: '';
+         display: block;
+         border-radius: 100%;
+         width: 5px;
+         height: 5px;
+         background: #5b7dde;
+      }
+   }
+
+   &__address {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+   }
+
+   &__address-icon {
+      border-radius: 4px;
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(244, 246, 248, 0.2);
+   }
+
+   &__address-icon-img {}
+
+   &__address-text {
+      font-weight: 500;
+      font-size: 16px;
+      color: #fff;
+   }
+
+   &__address-link {
+      padding-left: 2px;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      font-weight: 500;
+      font-size: 14px;
+      color: #bdccf7;
+
+      &::after {
+         content: '';
+         display: block;
+         width: 15px;
+         height: 18px;
+         background: url('../img/icons/arrow.svg') no-repeat center;
+      }
+   }
+
+   &__middle {
+      padding: 20px 0;
+      border-top: 1px solid #2b3038;
+      border-bottom: 1px solid #2b3038;
+   }
+
+   &__menu {}
+
+   &__menu-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+   }
+
+   &__menu-item {
+      width: 100%;
+   }
+
+   &__menu-link {
+      border-radius: 58px;
+      padding: 8px 16px;
+      width: 100%;
+      font-size: 16px;
+      color: #fff;
+      text-align: center;
+      background: #42484e;
+
+      &:hover {
+         color: #fff;
+         background: #5b7dde;
+      }
+   }
+
+   &__bottom {
+      padding: 20px 0;
+      text-align: center;
+   }
+
+   &__copyright {
+      font-size: 14px;
+      color: rgba(244, 246, 248, 0.4);
+   }
+}
