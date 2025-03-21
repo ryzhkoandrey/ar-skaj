@@ -1,10 +1,11 @@
 .footer {
    border-radius: 50px 50px 0 0;
-   margin-top: -50px;
+   // margin-top: -50px;
+   padding: 50px 0 20px;
    background: #161c24;
 
    &__top {
-      padding: 50px 0 20px;
+      padding-bottom: 20px;
       display: flex;
       align-items: center;
       gap: 32px;
@@ -72,6 +73,10 @@
          height: 18px;
          background: url('../img/icons/arrow.svg') no-repeat center;
       }
+
+      &:hover {
+         color: #5b7dde;
+      }
    }
 
    &__middle {
@@ -109,7 +114,7 @@
    }
 
    &__bottom {
-      padding: 20px 0;
+      padding-top: 20px;
       text-align: center;
    }
 
