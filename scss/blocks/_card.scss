@@ -1,5 +1,22 @@
 .card {
 
+   &:hover {
+
+      .card__icon {
+         bottom: -20px;
+         transform: rotate(-180deg);
+      }
+
+      .card__bottom {
+         background: #5b7dde;
+      }
+
+      .card__title,
+      .card__text {
+         color: #fff;
+      }
+   }
+
    &__top {
       position: relative;
    }
@@ -20,6 +37,7 @@
       align-items: center;
       justify-content: center;
       background: #fff;
+      transition: all 0.2s;
    }
 
    &__icon-img {}
@@ -28,6 +46,7 @@
       border-radius: 15px;
       padding: 18px;
       background: #f4f6f8;
+      transition: all 0.2s;
    }
 
    &__title {
@@ -35,11 +54,13 @@
       font-weight: 600;
       font-size: 18px;
       color: #161c24;
+      transition: all 0.2s;
    }
 
    &__text {
       font-size: 16px;
       line-height: 1.2;
       color: #454f5b;
+      transition: all 0.2s;
    }
 }
