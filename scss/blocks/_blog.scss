@@ -1,0 +1,29 @@
+.blog {
+   border-radius: 50px;
+   padding: 120px 0;
+   background: #fff;
+
+   &__title {
+      margin: 0 0 40px;
+   }
+
+   &__cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
+      gap: 30px;
+   }
+
+   &__card {
+
+      &:nth-child(1),
+      &:nth-child(2) {
+         grid-row: span 2;
+      }
+   }
+
+   &__card-top {
+
+      &--large {}
+   }
+}
