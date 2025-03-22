@@ -1,0 +1,45 @@
+.card {
+
+   &__top {
+      position: relative;
+   }
+
+   &__image {
+      border-radius: 15px;
+      object-fit: cover;
+   }
+
+   &__icon {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      border-radius: 47px;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+   }
+
+   &__icon-img {}
+
+   &__bottom {
+      border-radius: 15px;
+      padding: 18px;
+      background: #f4f6f8;
+   }
+
+   &__title {
+      margin: 0 0 6px;
+      font-weight: 600;
+      font-size: 18px;
+      color: #161c24;
+   }
+
+   &__text {
+      font-size: 16px;
+      line-height: 1.2;
+      color: #454f5b;
+   }
+}

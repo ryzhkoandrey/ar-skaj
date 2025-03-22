@@ -1,0 +1,16 @@
+.summer {
+   border-radius: 50px;
+   margin: -50px 0 0;
+   padding: 120px 0;
+   background: #fff;
+
+   &__title {
+      margin: 0 0 40px;
+   }
+
+   &__cards {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
