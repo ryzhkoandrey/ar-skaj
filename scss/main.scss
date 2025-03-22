@@ -6,6 +6,9 @@
 @import 'global/reset';
 @import 'global/base';
 
+// libs
+@import '../libs/swiper/swiper-bundle.min.css';
+
 // blocks
 
 @import 'blocks/none';
@@ -20,4 +23,5 @@
 @import 'blocks/summer';
 @import 'blocks/winter';
 @import 'blocks/additional';
+@import 'blocks/news';
 @import 'blocks/footer';
