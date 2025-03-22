@@ -1,4 +1,5 @@
 .news {
+   padding: 0 0 92px;
 
    &__top {
       margin: 0 0 40px;
@@ -33,7 +34,9 @@
 
    &__control-icon {}
 
-   &__body {}
+   &__body {
+      margin: 0 0 12px;
+   }
 
    &__article {
       border-radius: 15px;
@@ -88,5 +91,34 @@
       color: rgba(71, 79, 90, 0.5);
    }
 
-   &__bottom {}
+   &__bottom {
+      text-align: center;
+   }
+
+   // Swiper
+
+   .news__control.swiper-button-disabled {
+      cursor: default;
+
+      path {
+         stroke: #d9d9d9;
+      }
+
+      &:hover {
+         background: #fff;
+      }
+   }
+
+   .swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 2px;
+      background: #e0e2e4;
+      opacity: 1;
+      transition: all .2s;
+   }
+
+   .swiper-pagination-bullets .swiper-pagination-bullet-active {
+      border-radius: 5px;
+      width: 15px;
+      background: #5b7dde;
+   }
 }

@@ -1,15 +1,26 @@
 'use strict';
 
-// ---------- NEWS ----------
+// --------------- NEWS --------------- //
 
 // Swiper
 
-const swiper = new Swiper('#news-swiper', {
-   slidesPerView: 3,
+const newsSwiper = new Swiper('#news-swiper', {
+   slidesPerView: 1,
    spaceBetween: 30,
 
    navigation: {
-      prevEl: ".swiper-btn-prev",
-      nextEl: ".swiper-btn-next",
+      prevEl: "#news-swiper-prev",
+      nextEl: "#news-swiper-next",
+   },
+
+   pagination: {
+      el: "#news-swiper-pagination",
+      clickable: true,
+   },
+
+   breakpoints: {
+      1024: {
+         slidesPerView: 3,
+      },
    },
 });

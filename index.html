@@ -326,13 +326,13 @@
             <div class="news__top">
                <h2 class="title-2">Новости</h2>
                <div class="news__controls">
-                  <button class="news__control swiper-button-prev">
+                  <button class="news__control" id="news-swiper-prev">
                      <svg class="news__control-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.0711 12L4.92893 12" stroke="#5B7DDE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M12 19.071L4.92893 12L12 4.92891" stroke="#5B7DDE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                      </svg>
                   </button>
-                  <button class="news__control swiper-button-next">
+                  <button class="news__control" id="news-swiper-next">
                      <svg class="news__control-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.92893 12H19.0711" stroke="#5B7DDE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M12 4.92896L19.0711 12L12 19.0711" stroke="#5B7DDE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -384,7 +384,7 @@
                               <span class="news__article-tag">Объявление</span>
                               <h3 class="news__article-title">Роликовые коньки временно недоступны для проката</h3>
                               <p class="news__article-text">В связи с ремонтными работами в помещении проката роликовые коньки временно недоступны для проката.</p>
-                              <time class="news__article-time" datetime="25.04.23">23.04.25</time>
+                              <time class="news__article-time" datetime="25.04.20">20.04.25</time>
                            </a>
                         </article>
                      </div>
@@ -395,7 +395,29 @@
                               <span class="news__article-tag">Объявление</span>
                               <h3 class="news__article-title">Роликовые коньки в пункте проката на шоссе Космонавтов</h3>
                               <p class="news__article-text">В связи с ремонтными работами в помещении проката роликовые коньки временно недоступны для проката.</p>
-                              <time class="news__article-time" datetime="25.04.22">22.04.25</time>
+                              <time class="news__article-time" datetime="25.04.19">19.04.25</time>
+                           </a>
+                        </article>
+                     </div>
+
+                     <div class="swiper-slide">
+                        <article class="news__article">
+                           <a class="news__article-link" href="#">
+                              <span class="news__article-tag">Новость</span>
+                              <h3 class="news__article-title">Российский легкоатлет Вручинский дисквалифицирован на 4 года за допинг</h3>
+                              <p class="news__article-text">Всероссийская федерация легкой атлетики (ВФЛА) сообщает, что в соответствии...</p>
+                              <time class="news__article-time" datetime="25.04.18">18.04.25</time>
+                           </a>
+                        </article>
+                     </div>
+
+                     <div class="swiper-slide">
+                        <article class="news__article">
+                           <a class="news__article-link" href="#">
+                              <span class="news__article-tag">Объявление</span>
+                              <h3 class="news__article-title">Роликовые коньки временно недоступны для проката</h3>
+                              <p class="news__article-text">В связи с ремонтными работами в помещении проката роликовые коньки временно недоступны для проката.</p>
+                              <time class="news__article-time" datetime="25.04.17">17.04.25</time>
                            </a>
                         </article>
                      </div>
@@ -405,7 +427,7 @@
             </div>
 
             <div class="news__bottom">
-               <div class="swiper-pagination"></div>
+               <div class="news__pagination" id="news-swiper-pagination"></div>
             </div>
 
          </div>
@@ -468,7 +490,6 @@
 
    <!-- libs -->
    <script src="libs/swiper/swiper-bundle.min.js"></script>
-
    <!-- js -->
    <script src="js/main.js"></script>
 
