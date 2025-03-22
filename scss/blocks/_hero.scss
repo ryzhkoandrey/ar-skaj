@@ -8,8 +8,16 @@
    }
 
    &__info {
+      overflow: hidden;
       position: relative;
+      border-radius: 20px;
       margin: 0 0 16px;
+      min-height: 563px;
+      background: url('../img/photos/hero.jpg') no-repeat center / cover;
+
+      @media (min-resolution: 192dpi) {
+         background-image: url('../img/photos/hero@2x.jpg');
+      }
    }
 
    &__heading {
@@ -41,9 +49,7 @@
       color: #161c24;
    }
 
-   &__image {
-      border-radius: 20px;
-   }
+   &__image {}
 
    &__features {
       gap: 16px;
