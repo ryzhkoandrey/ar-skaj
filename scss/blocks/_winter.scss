@@ -1,0 +1,26 @@
+.winter {
+   border-radius: 50px;
+   margin: -122px 0 0;
+   padding: 120px 0;
+   box-shadow: 0 -20px 40px -4px rgba(145, 158, 171, 0.12);
+   background: #fff;
+
+   &__title {
+      margin: 0 0 40px;
+   }
+
+   &__cards {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 30px;
+   }
+
+   &__card {
+      grid-column: span 2;
+
+      &:nth-child(4),
+      &:nth-child(5) {
+         grid-column: span 3;
+      }
+   }
+}
