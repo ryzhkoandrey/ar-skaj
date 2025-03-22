@@ -1,4 +1,6 @@
 .card {
+   display: flex;
+   flex-direction: column;
 
    &:hover {
 
@@ -49,8 +51,13 @@
    &__bottom {
       border-radius: 15px;
       padding: 18px;
+      height: 100%;
       background: #f4f6f8;
       transition: all 0.2s;
+
+      &--white {
+         background: #fff;
+      }
    }
 
    &__title {

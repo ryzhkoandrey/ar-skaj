@@ -1,0 +1,30 @@
+.additional {
+   padding: 120px 0;
+   background: #f4f6f8 url('../img/decor/additional-bg.svg') no-repeat top 315px center;
+
+   &__inner {
+      display: flex;
+      gap: 123px;
+   }
+
+   &__heading {
+      width: 374px;
+      flex-shrink: 0;
+   }
+
+   &__title {
+      margin: 0 0 15px;
+   }
+
+   &__subtitle {
+      font-size: 18px;
+      line-height: 1.2;
+      color: #454f5b;
+   }
+
+   &__cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+   }
+}
