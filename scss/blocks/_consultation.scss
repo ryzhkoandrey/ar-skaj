@@ -1,0 +1,30 @@
+.consultation {
+   padding: 120px 0;
+
+   &__inner {
+      border-radius: 20px;
+      padding: 32px;
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      background: #fff;
+   }
+
+   &__left {}
+
+   &__title {
+      margin: 0 0 16px;
+      font-weight: 700;
+      font-size: 48px;
+      color: #161c24;
+   }
+
+   &__text {
+      margin: 0 0 32px;
+      font-size: 18px;
+      line-height: 1.3;
+      color: #454f5b;
+   }
+
+   &__right {}
+}
