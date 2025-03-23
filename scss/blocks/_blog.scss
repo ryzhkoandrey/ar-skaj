@@ -23,7 +23,14 @@
    }
 
    &__card-top {
+      height: 190px;
 
-      &--large {}
+      &--large {
+         height: 488px;
+      }
+   }
+
+   &__card-title {
+      margin: 0;
    }
 }
