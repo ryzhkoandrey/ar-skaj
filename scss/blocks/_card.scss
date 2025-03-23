@@ -49,6 +49,9 @@
    &__icon-img {}
 
    &__bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
       border-radius: 15px;
       padding: 18px;
       height: 100%;
@@ -61,7 +64,6 @@
    }
 
    &__title {
-      margin: 0 0 6px;
       font-weight: 600;
       font-size: 18px;
       color: #161c24;
