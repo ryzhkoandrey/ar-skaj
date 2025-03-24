@@ -46,17 +46,14 @@
 
    &__features {
       gap: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
    }
 
    &__feature {
       position: relative;
       border-radius: 15px;
       padding: 24px 24px 24px 78px;
-      width: 100%;
-      min-height: 111px;
       background: #fff;
    }
 
