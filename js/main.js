@@ -27,19 +27,22 @@ const newsSwiper = new Swiper('#news-swiper', {
 
 // --------------- FORM --------------- //
 
-// Phone input mask
+// Tel input mask
 
-const phoneInput = document.querySelector('#phone-input');
+const telInput = document.querySelector('#tel-input');
 
-phoneInput.addEventListener('input', (e) => {
-   let value = e.target.value.replace(/\D/g, '');
-   if (value.startsWith('7')) value = value.slice(1);
+if (telInput) {
 
-   let formatted = '+7 ';
-   if (value.length > 0) formatted += value.substring(0, 3);
-   if (value.length > 3) formatted += ' ' + value.substring(3, 6);
-   if (value.length > 6) formatted += '-' + value.substring(6, 8);
-   if (value.length > 8) formatted += '-' + value.substring(8, 10);
+   telInput.addEventListener('input', (e) => {
+      let value = e.target.value.replace(/\D/g, '');
+      if (value.startsWith('7')) value = value.slice(1);
 
-   e.target.value = formatted;
-});
+      let formatted = '+7 ';
+      if (value.length > 0) formatted += value.substring(0, 3);
+      if (value.length > 3) formatted += ' ' + value.substring(3, 6);
+      if (value.length > 6) formatted += '-' + value.substring(6, 8);
+      if (value.length > 8) formatted += '-' + value.substring(8, 10);
+
+      e.target.value = formatted;
+   });
+}
