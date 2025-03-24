@@ -1,0 +1,50 @@
+.rental {
+   border-radius: 50px 50px 0 0;
+   padding: 170px 0;
+   background: url('../img/photos/rental.jpg') no-repeat center / cover;
+
+   @media (min-resolution: 192dpi) {
+      background-image: url('../img/photos/rental@2x.jpg');
+   }
+
+   &__inner {
+      border-radius: 30px;
+      padding: 48px;
+      max-width: 834px;
+      background: #fff;
+   }
+
+   &__title {
+      margin: 0 0 24px;
+      font-family: "Onest", sans-serif;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.02;
+      color: #161c24;
+   }
+
+   &__text-box {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+   }
+
+   &__text {
+      font-size: 18px;
+      line-height: 1.4;
+      color: #454f5b;
+   }
+
+   &__link {
+      font-weight: 600;
+      color: #5b7dde;
+
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+
+   &__strong {
+      font-weight: 600;
+   }
+}
