@@ -1,12 +1,53 @@
 .messengers {
+   border-radius: 20px;
+   padding: 24px;
+   height: 100%;
+   background: #f4f6f8 url('../img/decor/messengers-bg.svg') no-repeat bottom -15px left -15px;
 
-   &__title {}
+   &__title {
+      margin: 0 0 24px;
+      font-size: 18px;
+      line-height: 1.3;
+      color: #454f5b;
+   }
 
-   &__link {}
+   &__links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+   }
 
-   &__link--telegram {}
+   &__link {
+      border: 1px solid transparent;
+      border-radius: 8px;
+      padding: 11px 16px;
+      min-height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+   }
 
-   &__link-text {}
+   &__link--telegram {
+      color: #229ed9;
+
+      &:hover {
+         border-color: #229ed9;
+      }
+   }
+
+   &__link--whatsapp {
+      color: #08b419;
+
+      &:hover {
+         border-color: #08b419;
+      }
+   }
+
+   &__link-text {
+      font-weight: 500;
+      font-size: 18px;
+   }
 
    &__link-icon {}
 }

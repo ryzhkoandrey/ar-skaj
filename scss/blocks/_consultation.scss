@@ -10,10 +10,12 @@
       background: #fff;
    }
 
-   &__left {}
+   &__left {
+      width: 100%;
+   }
 
    &__title {
-      margin: 0 0 16px;
+      margin: 0 0 20px;
       font-weight: 700;
       font-size: 48px;
       color: #161c24;
@@ -26,5 +28,8 @@
       color: #454f5b;
    }
 
-   &__right {}
+   &__right {
+      flex-shrink: 0;
+      width: 342px;
+   }
 }

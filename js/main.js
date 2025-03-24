@@ -25,7 +25,7 @@ const newsSwiper = new Swiper('#news-swiper', {
    },
 });
 
-// --------------- FORM --------------- //
+// --------------- CONSULTATION --------------- //
 
 // Tel input mask
 
