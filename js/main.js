@@ -5,10 +5,12 @@
 const menu = document.querySelector('#menu');
 const menuToggler = document.querySelector('#menu-toggler');
 
-menuToggler.onclick = function () {
-   menu.classList.toggle('header__menu--active');
-   menuToggler.classList.toggle('header__menu-toggler--active');
-};
+if (menuToggler) {
+   menuToggler.onclick = function () {
+      menu.classList.toggle('header__menu--active');
+      menuToggler.classList.toggle('header__menu-toggler--active');
+   };
+}
 
 // ---------- NEWS ----------
 
@@ -42,7 +44,6 @@ const newsSwiper = new Swiper('#news-swiper', {
 const telInput = document.querySelector('#tel-input');
 
 if (telInput) {
-
    telInput.addEventListener('input', (e) => {
       let value = e.target.value.replace(/\D/g, '');
       if (value.startsWith('7')) value = value.slice(1);
