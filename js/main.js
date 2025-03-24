@@ -1,8 +1,19 @@
 'use strict';
 
-// --------------- NEWS --------------- //
+// ---------- MENU ----------
 
-// Swiper
+const menu = document.querySelector('#menu');
+const menuToggler = document.querySelector('#menu-toggler');
+
+menuToggler.onclick = function () {
+   menu.classList.toggle('header__menu--active');
+   menuToggler.classList.toggle('header__menu-toggler--active');
+   document.body.classList.toggle('no-scroll');
+};
+
+// ---------- NEWS ----------
+
+// swiper
 
 const newsSwiper = new Swiper('#news-swiper', {
    slidesPerView: 1,
@@ -25,9 +36,9 @@ const newsSwiper = new Swiper('#news-swiper', {
    },
 });
 
-// --------------- CONSULTATION --------------- //
+// ---------- CONSULTATION ----------
 
-// Tel input mask
+// tel input mask
 
 const telInput = document.querySelector('#tel-input');
 
