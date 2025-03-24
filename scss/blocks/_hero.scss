@@ -5,8 +5,8 @@
 
    &__info {
       overflow: hidden;
-      position: relative;
       border-radius: 20px;
+      padding: 32px;
       margin: 0 0 16px;
       min-height: 563px;
       background: url('../img/photos/hero.jpg') no-repeat center / cover;
@@ -17,9 +17,6 @@
    }
 
    &__heading {
-      position: absolute;
-      top: 32px;
-      left: 32px;
       border-radius: 20px;
       padding: 30px 40px 40px;
       max-width: 740px;

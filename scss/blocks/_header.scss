@@ -11,7 +11,7 @@
       justify-content: space-between;
       gap: 15px;
 
-      @media (max-width: 1200px) {
+      @include laptop {
          justify-content: flex-start;
       }
    }
@@ -19,11 +19,11 @@
    &__logo {
       flex-shrink: 0;
 
-      @media (max-width: 500px) {
+      @include tablet {
          width: 100px;
       }
 
-      @media (max-width: 400px) {
+      @include mobile {
          display: none;
       }
    }
@@ -34,13 +34,13 @@
 
    &__menu {
 
-      @media (max-width: 1200px) {
+      @include laptop {
          display: none;
       }
 
       &--active {
 
-         @media (max-width: 1200px) {
+         @include laptop {
             display: block;
          }
       }
@@ -79,11 +79,11 @@
       align-items: center;
       justify-content: center;
 
-      @media (max-width: 1200px) {
+      @include laptop {
          display: flex;
       }
 
-      @media (max-width: 400px) {
+      @include mobile {
          margin: 0 auto 0 0;
       }
 
@@ -121,7 +121,7 @@
    &__phone {
       padding: 0 0 0 13px;
 
-      @media (max-width: 1200px) {
+      @include laptop {
          padding: 0;
       }
    }

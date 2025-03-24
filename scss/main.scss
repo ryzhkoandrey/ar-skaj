@@ -1,5 +1,6 @@
 // global
 
+@import 'global/mixins';
 @import 'global/vars';
 @import 'global/fonts';
 @import 'global/reset';
@@ -11,7 +12,6 @@
 // blocks
 
 @import 'blocks/none';
-@import 'blocks/no-scroll';
 @import 'blocks/container';
 @import 'blocks/title-2';
 @import 'blocks/card';

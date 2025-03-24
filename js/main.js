@@ -8,7 +8,6 @@ const menuToggler = document.querySelector('#menu-toggler');
 menuToggler.onclick = function () {
    menu.classList.toggle('header__menu--active');
    menuToggler.classList.toggle('header__menu-toggler--active');
-   document.body.classList.toggle('no-scroll');
 };
 
 // ---------- NEWS ----------
