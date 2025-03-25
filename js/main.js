@@ -34,6 +34,9 @@ const newsSwiper = new Swiper('#news-swiper', {
       1024: {
          slidesPerView: 3,
       },
+      768: {
+         slidesPerView: 2,
+      },
    },
 });
 

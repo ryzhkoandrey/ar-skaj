@@ -40,11 +40,13 @@
 
    &__article {
       border-radius: 15px;
+      height: 100%;
       background: #fff;
    }
 
    &__article-link {
       padding: 24px;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -96,6 +98,12 @@
    }
 
    // Swiper
+
+   .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+   }
 
    .news__control.swiper-button-disabled {
       cursor: default;
