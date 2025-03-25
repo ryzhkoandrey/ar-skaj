@@ -5,6 +5,22 @@
    box-shadow: 0 -20px 40px -4px rgba(145, 158, 171, 0.12);
    background: #fff;
 
+   @include laptop {
+      padding: 120px 0 100px;
+   }
+
+   @include laptop-small {
+      padding: 120px 0 80px;
+   }
+
+   @include tablet {
+      padding: 120px 0 60px;
+   }
+
+   @include mobile {
+      padding: 120px 0 40px;
+   }
+
    &__title {
       margin: 0 0 40px;
    }

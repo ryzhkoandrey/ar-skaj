@@ -3,12 +3,22 @@
 
    &__inner {
       display: flex;
-      gap: 123px;
+      justify-content: space-between;
+      gap: 30px;
+
+      @include laptop-small {
+         flex-direction: column;
+      }
    }
 
    &__heading {
-      width: 374px;
+      width: 100%;
+      max-width: 374px;
       flex-shrink: 0;
+
+      @include laptop-small {
+         max-width: none;
+      }
    }
 
    &__title {
@@ -22,8 +32,18 @@
    }
 
    &__cards {
+      width: 100%;
+      max-width: 793px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 30px;
+
+      @include laptop-small {
+         max-width: none;
+      }
+
+      @include tablet {
+         grid-template-columns: 1fr;
+      }
    }
 }
