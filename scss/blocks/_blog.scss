@@ -11,6 +11,14 @@
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, auto);
       gap: 30px;
+
+      @include laptop-small {
+         grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include tablet {
+         grid-template-columns: 1fr;
+      }
    }
 
    &__card {
@@ -24,8 +32,16 @@
    &__card-top {
       height: 190px;
 
+      @include laptop-small {
+         height: 234px;
+      }
+
       &--large {
          height: 468px;
+
+         @include laptop-small {
+            height: 234px;
+         }
       }
    }
 }
