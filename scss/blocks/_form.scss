@@ -6,6 +6,11 @@
       align-items: center;
       justify-content: space-between;
       gap: 16px;
+
+      @include tablet {
+         flex-direction: column;
+         align-items: flex-start;
+      }
    }
 
    &__input {
@@ -40,6 +45,10 @@
       color: #fff;
       background: #5b7dde;
 
+      @include mobile {
+         width: 100%;
+      }
+
       &:hover {
          background: #3e65d7;
       }
@@ -47,6 +56,7 @@
 
    &__bottom {
       display: flex;
+      align-items: flex-start;
       gap: 12px;
    }
 
@@ -83,7 +93,7 @@
          content: '';
          display: block;
          position: absolute;
-         top: -2px;
+         top: -3px;
          left: -3px;
          width: 24px;
          height: 24px;
@@ -100,6 +110,7 @@
    }
 
    &__link {
+      display: inline;
       font-weight: 500;
       color: #5b7dde;
 

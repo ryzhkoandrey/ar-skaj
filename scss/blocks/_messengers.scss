@@ -4,6 +4,14 @@
    height: 100%;
    background: #f4f6f8 url('../img/decor/messengers-bg.svg') no-repeat bottom -15px left -15px;
 
+   @include laptop-small {
+      background-image: none;
+   }
+
+   @include mobile {
+      padding: 15px;
+   }
+
    &__title {
       margin: 0 0 24px;
       font-size: 18px;
@@ -15,6 +23,14 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
+
+      @include laptop-small {
+         flex-direction: row;
+      }
+
+      @include tablet {
+         flex-direction: column;
+      }
    }
 
    &__link {
@@ -25,6 +41,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 15px;
       background: #fff;
    }
 
@@ -47,6 +64,10 @@
    &__link-text {
       font-weight: 500;
       font-size: 18px;
+
+      @include mobile {
+         font-size: 16px;
+      }
    }
 
    &__link-icon {}
