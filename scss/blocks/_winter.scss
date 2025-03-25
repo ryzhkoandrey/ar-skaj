@@ -18,9 +18,28 @@
    &__card {
       grid-column: span 2;
 
+      @include laptop-small {
+         grid-column: span 3;
+      }
+
+      @include tablet {
+         grid-column: span 6;
+      }
+
       &:nth-child(4),
       &:nth-child(5) {
          grid-column: span 3;
+
+         @include tablet {
+            grid-column: span 6;
+         }
+      }
+
+      &:nth-child(5) {
+
+         @include laptop-small {
+            grid-column: span 6;
+         }
       }
    }
 }

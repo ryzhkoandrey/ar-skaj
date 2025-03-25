@@ -1,24 +1,7 @@
 .summer {
    border-radius: 50px;
    margin: -50px 0 0;
-   padding: 120px 0;
    background: #fff;
-
-   @include laptop {
-      padding: 100px 0;
-   }
-
-   @include laptop-small {
-      padding: 80px 0;
-   }
-
-   @include tablet {
-      padding: 60px 0;
-   }
-
-   @include mobile {
-      padding: 40px 0;
-   }
 
    &__title {
       margin: 0 0 40px;
