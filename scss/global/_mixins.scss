@@ -5,6 +5,13 @@
    }
 }
 
+@mixin laptop-small() {
+
+   @media (max-width: 1024px) {
+      @content;
+   }
+}
+
 @mixin tablet() {
 
    @media (max-width: 768px) {
