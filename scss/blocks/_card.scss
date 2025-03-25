@@ -22,6 +22,11 @@
    &__top {
       position: relative;
       height: 234px;
+      flex-shrink: 0;
+
+      @include mobile {
+         height: 200px;
+      }
    }
 
    &__image {

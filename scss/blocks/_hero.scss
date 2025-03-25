@@ -4,11 +4,12 @@
    background: url('../img/decor/hero-bg.svg') no-repeat top 100px center;
 
    @include tablet {
+      padding: 66px 0 100px;
       background-image: none;
    }
 
    @include mobile {
-      padding: 46px 0 140px;
+      padding: 46px 0 80px;
    }
 
    &__info {
