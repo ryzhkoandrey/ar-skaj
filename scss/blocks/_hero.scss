@@ -18,10 +18,10 @@
       padding: 32px;
       margin: 0 0 16px;
       min-height: 563px;
-      background: url('../img/photos/hero.jpg') no-repeat center / cover;
+      background: url('../img/photos/hero.webp') no-repeat center / cover;
 
       @media (min-resolution: 192dpi) {
-         background-image: url('../img/photos/hero@2x.jpg');
+         background-image: url('../img/photos/hero@2x.webp');
       }
 
       @include tablet {
