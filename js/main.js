@@ -1,50 +1,60 @@
 'use strict';
 
-// ---------- MENU ----------
+// ---------- HEADER ----------
 
-const menu = document.querySelector('#menu');
-const menuToggler = document.querySelector('#menu-toggler');
+// menu
 
-if (menuToggler) {
-   menuToggler.onclick = function () {
+const menu = document.querySelector('[data-menu]');
+const menuToggler = document.querySelector('[data-menu-toggler]');
+
+if (menu && menuToggler) {
+   menuToggler.addEventListener('click', () => {
       menu.classList.toggle('header__menu--active');
       menuToggler.classList.toggle('header__menu-toggler--active');
-   };
+   });
+} else {
+   console.warn('error: menu && menuToggler');
 }
 
 // ---------- NEWS ----------
 
 // swiper
 
-const newsSwiper = new Swiper('#news-swiper', {
-   slidesPerView: 1,
-   spaceBetween: 30,
+const newSwiperElement = document.querySelector('[data-news-swiper]');
 
-   navigation: {
-      prevEl: "#news-swiper-prev",
-      nextEl: "#news-swiper-next",
-   },
+if (typeof Swiper !== 'undefined' && newSwiperElement) {
+   const newsSwiper = new Swiper(newSwiperElement, {
+      slidesPerView: 1,
+      spaceBetween: 30,
 
-   pagination: {
-      el: "#news-swiper-pagination",
-      clickable: true,
-   },
-
-   breakpoints: {
-      1024: {
-         slidesPerView: 3,
+      navigation: {
+         prevEl: "[data-news-swiper-prev]",
+         nextEl: "[data-news-swiper-next]",
       },
-      768: {
-         slidesPerView: 2,
+
+      pagination: {
+         el: "[data-news-swiper-pagination]",
+         clickable: true,
       },
-   },
-});
+
+      breakpoints: {
+         1024: {
+            slidesPerView: 3,
+         },
+         768: {
+            slidesPerView: 2,
+         },
+      },
+   });
+} else {
+   console.warn('error: newSwiperElement');
+}
 
 // ---------- CONSULTATION ----------
 
 // tel input mask
 
-const telInput = document.querySelector('#tel-input');
+const telInput = document.querySelector('[data-tel-input]');
 
 if (telInput) {
    telInput.addEventListener('input', (e) => {
@@ -59,4 +69,6 @@ if (telInput) {
 
       e.target.value = formatted;
    });
+} else {
+   console.warn('error: telInput');
 }
