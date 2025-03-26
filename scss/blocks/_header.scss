@@ -1,6 +1,5 @@
 .header {
    z-index: 10;
-   position: relative;
    border-radius: 0 0 20px 20px;
    padding: 16px 0;
    box-shadow: 0 -26px 82px 0 rgba(55, 80, 117, 0.15);
@@ -36,14 +35,19 @@
    &__menu {
 
       @include laptop {
-         position: absolute;
+         overflow: auto;
+         position: fixed;
          top: 85px;
+         bottom: 0;
          left: 0;
          padding: 30px;
          width: 100%;
-         min-height: calc(100vh - 85px);
          display: none;
          background: #fff;
+      }
+
+      @include tablet {
+         top: 70px;
       }
 
       &--active {

@@ -1,0 +1,6 @@
+.no-scroll {
+
+   @include laptop {
+      overflow: hidden;
+   }
+}

@@ -6,11 +6,13 @@
 
 const menu = document.querySelector('[data-menu]');
 const menuToggler = document.querySelector('[data-menu-toggler]');
+const body = document.querySelector('body');
 
 if (menu && menuToggler) {
    menuToggler.addEventListener('click', () => {
-      menu.classList.toggle('header__menu--active');
       menuToggler.classList.toggle('header__menu-toggler--active');
+      menu.classList.toggle('header__menu--active');
+      body.classList.toggle('no-scroll');
    });
 } else {
    console.warn('error: menu && menuToggler');
