@@ -1,9 +1,9 @@
 .title-2 {
-   font-family: "Onest", sans-serif;
+   font-family: var(--font-secondary);
    font-weight: 700;
    font-size: 36px;
    line-height: 1.02;
-   color: #161c24;
+   color: var(--color-text-primary);
 
    @include tablet {
       font-size: 32px;
@@ -16,7 +16,7 @@
    &__text {}
 
    &__mark {
-      color: #5b7dde;
+      color: var(--color-primary);
    }
 
    &__icon {

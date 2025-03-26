@@ -89,12 +89,12 @@
       border-radius: 58px;
       padding: 8px 16px;
       font-size: 16px;
-      color: #161c24;
+      color: var(--color-text-primary);
       background: #f4f6f8;
 
       &:hover {
          color: #fff;
-         background: #5b7dde;
+         background: var(--color-primary);
       }
    }
 
@@ -168,7 +168,7 @@
       background: #f4f6f8;
 
       &:hover {
-         border: 1px solid #5b7dde;
+         border: 1px solid var(--color-primary);
       }
    }
 

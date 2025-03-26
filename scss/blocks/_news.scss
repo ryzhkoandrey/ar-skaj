@@ -24,7 +24,7 @@
       background: #fff;
 
       &:hover {
-         background: #5B7DDE;
+         background: var(--color-primary);
 
          path {
             stroke: #fff;
@@ -54,7 +54,7 @@
       &:hover {
 
          .news__article-title {
-            color: #5b7dde;
+            color: var(--color-primary);
          }
       }
    }
@@ -68,14 +68,14 @@
       font-size: 14px;
       line-height: 1.2;
       color: #fff;
-      background: #5b7dde;
+      background: var(--color-primary);
    }
 
    &__article-title {
       margin: 0 0 12px;
       font-weight: 600;
       font-size: 18px;
-      color: #161c24;
+      color: var(--color-text-primary);
       transition: all 0.2s;
    }
 
@@ -83,7 +83,7 @@
       margin: 0 0 24px;
       font-size: 16px;
       line-height: 1.2;
-      color: #454f5b;
+      color: var(--color-text-secondary);
    }
 
    &__article-time {
@@ -127,6 +127,6 @@
    .swiper-pagination-bullets .swiper-pagination-bullet-active {
       border-radius: 5px;
       width: 15px;
-      background: #5b7dde;
+      background: var(--color-primary);
    }
 }

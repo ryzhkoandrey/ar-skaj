@@ -10,7 +10,7 @@
       }
 
       .card__bottom {
-         background: #5b7dde;
+         background: var(--color-primary);
       }
 
       .card__title,
@@ -71,14 +71,14 @@
    &__title {
       font-weight: 600;
       font-size: 18px;
-      color: #161c24;
+      color: var(--color-text-primary);
       transition: all 0.2s;
    }
 
    &__text {
       font-size: 16px;
       line-height: 1.2;
-      color: #454f5b;
+      color: var(--color-text-secondary);
       transition: all 0.2s;
    }
 }

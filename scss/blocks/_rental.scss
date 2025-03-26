@@ -52,13 +52,13 @@
    &__text {
       font-size: 18px;
       line-height: 1.4;
-      color: #454f5b;
+      color: var(--color-text-secondary);
    }
 
    &__link {
       display: inline;
       font-weight: 600;
-      color: #5b7dde;
+      color: var(--color-primary);
 
       &:hover {
          text-decoration: underline;

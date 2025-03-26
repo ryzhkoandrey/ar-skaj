@@ -38,7 +38,7 @@
          border-radius: 100%;
          width: 5px;
          height: 5px;
-         background: #5b7dde;
+         background: var(--color-primary);
       }
    }
 
@@ -89,7 +89,7 @@
       }
 
       &:hover {
-         color: #5b7dde;
+         color: var(--color-primary);
       }
    }
 
@@ -136,7 +136,7 @@
 
       &:hover {
          color: #fff;
-         background: #5b7dde;
+         background: var(--color-primary);
       }
    }
 
