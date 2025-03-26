@@ -6,26 +6,28 @@
 
 const menu = document.querySelector('[data-menu]');
 const menuToggler = document.querySelector('[data-menu-toggler]');
+const header = document.querySelector('[data-header]');
 const body = document.querySelector('body');
 
-if (menu && menuToggler) {
+if (menu && menuToggler && header) {
    menuToggler.addEventListener('click', () => {
-      menuToggler.classList.toggle('header__menu-toggler--active');
+      header.classList.toggle('header--active');
       menu.classList.toggle('header__menu--active');
+      menuToggler.classList.toggle('header__menu-toggler--active');
       body.classList.toggle('no-scroll');
    });
 } else {
-   console.warn('error: menu && menuToggler');
+   console.warn('error: menu');
 }
 
 // ---------- NEWS ----------
 
 // swiper
 
-const newSwiperElement = document.querySelector('[data-news-swiper]');
+const newsSwiperElement = document.querySelector('[data-news-swiper]');
 
-if (typeof Swiper !== 'undefined' && newSwiperElement) {
-   const newsSwiper = new Swiper(newSwiperElement, {
+if (typeof Swiper !== 'undefined' && newsSwiperElement) {
+   const newsSwiper = new Swiper(newsSwiperElement, {
       slidesPerView: 1,
       spaceBetween: 30,
 
@@ -49,7 +51,7 @@ if (typeof Swiper !== 'undefined' && newSwiperElement) {
       },
    });
 } else {
-   console.warn('error: newSwiperElement');
+   console.warn('error: swiper');
 }
 
 // ---------- CONSULTATION ----------
@@ -72,5 +74,5 @@ if (telInput) {
       e.target.value = formatted;
    });
 } else {
-   console.warn('error: telInput');
+   console.warn('error: tel input mask');
 }
