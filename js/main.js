@@ -32,12 +32,12 @@ if (typeof Swiper !== 'undefined' && newsSwiperElement) {
       spaceBetween: 30,
 
       navigation: {
-         prevEl: "[data-news-swiper-prev]",
-         nextEl: "[data-news-swiper-next]",
+         prevEl: '[data-news-swiper-prev]',
+         nextEl: '[data-news-swiper-next]',
       },
 
       pagination: {
-         el: "[data-news-swiper-pagination]",
+         el: '[data-news-swiper-pagination]',
          clickable: true,
       },
 

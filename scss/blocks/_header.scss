@@ -1,5 +1,4 @@
 .header {
-   position: relative;
    z-index: 10;
    border-radius: 0 0 20px 20px;
    padding: 16px 0;
@@ -28,6 +27,8 @@
          justify-content: flex-start;
       }
    }
+
+   // logo
 
    &__logo {
       flex-shrink: 0;
@@ -107,11 +108,9 @@
       height: 32px;
       display: none;
       flex-shrink: 0;
-      align-items: center;
-      justify-content: center;
 
       @include laptop {
-         display: flex;
+         display: block;
       }
 
       @include mobile {
@@ -121,33 +120,38 @@
       &--active {
 
          .header__menu-toggler-icon--open {
-            transform: scale(0);
+            transform: translate(-50%, -50%) scale(0);
          }
 
          .header__menu-toggler-icon--close {
-            transform: scale(1);
+            transform: translate(-50%, -50%) scale(1);
          }
       }
    }
 
    &__menu-toggler-icon {
       position: absolute;
-      top: 5px;
-      left: 5px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       transition: all .2s;
 
       &--open {}
 
       &--close {
-         transform: scale(0);
+         transform: translate(-50%, -50%) scale(0);
       }
    }
+
+   // time
 
    &__time {
       font-weight: 500;
       font-size: 13px;
       color: #5b5b5b;
    }
+
+   // phone
 
    &__phone {
       padding: 0 0 0 13px;
