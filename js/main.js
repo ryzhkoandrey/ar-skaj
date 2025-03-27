@@ -17,7 +17,7 @@ if (menu && menuToggler && header) {
       body.classList.toggle('no-scroll');
    });
 } else {
-   console.warn('error: menu');
+   console.error('error: menu');
 }
 
 // ---------- NEWS ----------
@@ -51,7 +51,7 @@ if (typeof Swiper !== 'undefined' && newsSwiperElement) {
       },
    });
 } else {
-   console.warn('error: swiper');
+   console.error('error: swiper');
 }
 
 // ---------- CONSULTATION ----------
@@ -74,5 +74,5 @@ if (telInput) {
       e.target.value = formatted;
    });
 } else {
-   console.warn('error: tel input mask');
+   console.error('error: tel input mask');
 }
